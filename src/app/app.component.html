@@ -1,0 +1,14 @@
+<div id="reportContainer">
+  <powerbi-report
+    *ngIf="embedConfiguration"
+    [embedConfig] = "embedConfiguration"
+
+    [cssClassName] = "'report-container'"
+
+    [phasedEmbedding] = "false"
+
+    [eventHandlers] = "eventHandler()"
+  >
+
+  </powerbi-report>
+</div>
